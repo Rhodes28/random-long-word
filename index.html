@@ -33,13 +33,19 @@
       display: inline-block;
       max-width: 80%;
     }
+    .word-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
     .word {
       font-size: 3.3rem;
       font-weight: bold;
     }
     .rarity {
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
+      font-size: 2rem;
     }
     .definition {
       margin-top: 1rem;
@@ -62,8 +68,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="word" id="word"></div>
-    <div class="rarity" id="rarity"></div>
+    <div class="word-line">
+      <div class="word" id="word"></div>
+      <div class="rarity" id="rarity"></div>
+    </div>
     <div class="definition" id="definition"></div>
     <div>
       <button onclick="getRandomWord()">New Word</button>
