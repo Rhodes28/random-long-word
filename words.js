@@ -101,7 +101,7 @@ const words = [
   },
   {
     word: "One-Hundred-Percentisms",
-    definition: "Beliefs or attitudes demanding total commitment."
+    definition: "Qualities of being an extreme or unjustified nationalist."
   },
   {
     word: "Nonrepresentationalisms",
@@ -201,7 +201,7 @@ const words = [
   },
   {
     word: "One-Hundred-Percentism",
-    definition: "The belief in giving or expecting complete commitment."
+    definition: "The quality of being an extreme or unjustified nationalist."
   },
   {
     word: "Nonrepresentationalism",
