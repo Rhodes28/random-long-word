@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Random Long Word</title>
-
-  <!-- Include ResponsiveVoice -->
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_KEY_HERE"></script>
-
   <script src="words.js" defer></script>
   <script src="script.js" defer></script>
   <style>
@@ -14,50 +10,56 @@
       font-family: sans-serif;
       padding: 2rem;
       text-align: center;
-      background-image: url('background.jpg'); /* Replace with your image file */
+      background-image: url('your-background.jpg'); /* replace with your image */
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       color: white;
-      text-shadow: 1px 1px 2px black;
     }
-    .container {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 2rem;
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2.5rem;
       border-radius: 15px;
-      display: inline-block;
+      max-width: 700px;
+      margin: 5rem auto 2rem auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     }
+
     .word {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: bold;
     }
+
     .definition {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       font-size: 1.5rem;
+      line-height: 1.6;
     }
+
     button {
       margin: 1rem 0.5rem;
-      padding: 0.7rem 1.2rem;
+      padding: 0.8rem 1.6rem;
       font-size: 1.1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      background-color: #ffffffbb;
+      background-color: #ffffffcc;
       color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+
     button:hover {
-      background-color: #eee;
+      background-color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="box">
     <div class="word" id="word"></div>
     <div class="definition" id="definition"></div>
-    <div>
-      <button onclick="getRandomWord()">New Word</button>
-      <button onclick="pronounceWord()">🔊 Pronounce</button>
-    </div>
+    <button onclick="getRandomWord()">New Word</button>
+    <button onclick="pronounceWord()">🔊 Pronounce</button>
   </div>
-<script src="https://code.responsivevoice.org/responsivevoice.js?key=0Zn6jvy1"></script>
 </body>
 </html>
