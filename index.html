@@ -5,9 +5,9 @@
   <title>Random Long Word</title>
 
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=0Zn6jvy1"></script>
-
   <script src="words.js" defer></script>
   <script src="script.js" defer></script>
+
   <style>
     body {
       font-family: sans-serif;
@@ -18,7 +18,6 @@
       color: white;
       text-shadow: 1px 1px 2px black;
 
-      /* Centering */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,6 +25,7 @@
       margin: 0;
       padding: 2rem;
     }
+
     .container {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 2rem;
@@ -33,14 +33,22 @@
       display: inline-block;
       max-width: 80%;
     }
+
     .word {
       font-size: 3.3rem;
       font-weight: bold;
     }
+
+    .rarity {
+      font-size: 1.5rem;
+      margin-top: 0.2rem;
+    }
+
     .definition {
       margin-top: 1rem;
       font-size: 1.65rem;
     }
+
     button {
       margin: 1rem 0.5rem;
       padding: 0.7rem 1.2rem;
@@ -51,6 +59,7 @@
       background-color: #ffffffbb;
       color: black;
     }
+
     button:hover {
       background-color: #eee;
     }
@@ -59,6 +68,7 @@
 <body>
   <div class="container">
     <div class="word" id="word"></div>
+    <div class="rarity" id="rarity"></div>
     <div class="definition" id="definition"></div>
     <div>
       <button onclick="getRandomWord()">New Word</button>
