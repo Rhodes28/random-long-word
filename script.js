@@ -9,7 +9,7 @@ function pronounceWord() {
   const word = document.getElementById("word").textContent;
   if (!word) return;
 
-  responsiveVoice.speak(word, "UK English Female", { rate: 0.75 });
+  responsiveVoice.speak(word, "UK English Female", { rate: 0.8 });
 }
 
 window.addEventListener("DOMContentLoaded", getRandomWord);
