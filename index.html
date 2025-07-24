@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Long Word</title>
+  <script src="words.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      text-align: center;
+      background-image: url('chalkboard.jpg'); /* replace with your image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2.5rem;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: 5rem auto 2rem auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .word {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    .definition {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+
+    button {
+      margin: 1rem 0.5rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.1rem;
+      background-color: #ffffffcc;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="word" id="word"></div>
+    <div class="definition" id="definition"></div>
+    <button onclick="getRandomWord()">New Word</button>
+    <button onclick="pronounceWord()">🔊 Pronounce</button>
+  </div>
+</body>
+</html>
