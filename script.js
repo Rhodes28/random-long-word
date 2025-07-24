@@ -2,17 +2,23 @@ function getRandomWord() {
   const randomIndex = Math.floor(Math.random() * words.length);
   const entry = words[randomIndex];
 
-  document.getElementById("word").textContent = entry.word;
-  document.getElementById("definition").innerHTML = entry.definition;
-  document.getElementById("rarity").textContent = getRarityStars(entry.word);
-}
+  const word = entry.word;
+  const definition = entry.definition;
 
-function getRarityStars(word) {
-  const len = word.length;
-  if (len <= 21) return "";
-  if (len <= 23) return "⭐";
-  if (len <= 28) return "⭐⭐";
-  return "⭐⭐⭐";
+  document.getElementById("word").textContent = word;
+  document.getElementById("definition").innerHTML = definition;
+
+  // Rarity stars
+  let stars = "";
+  const length = word.length;
+  if (length >= 29) {
+    stars = "⭐️⭐️⭐️";
+  } else if (length >= 24) {
+    stars = "⭐️⭐️";
+  } else if (length >= 22) {
+    stars = "⭐️";
+  }
+  document.getElementById("rarity").textContent = stars;
 }
 
 function pronounceWord() {
