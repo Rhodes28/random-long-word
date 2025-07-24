@@ -9,7 +9,14 @@ function pronounceWord() {
   const word = document.getElementById("word").textContent;
   if (!word) return;
 
-  responsiveVoice.speak(word, "UK English Female", { rate: 0.8 });
+  if (typeof responsiveVoice !== 'undefined') {
+    responsiveVoice.speak(word, "UK English Female", { rate: 0.8 });
+  } else {
+    const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = "en-US";
+    utterance.rate = 0.8;
+    speechSynthesis.speak(utterance);
+  }
 }
 
 window.addEventListener("DOMContentLoaded", getRandomWord);
