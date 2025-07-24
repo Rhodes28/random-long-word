@@ -10,14 +10,13 @@ function pronounceWord() {
   if (!word) return;
 
   if (typeof responsiveVoice !== 'undefined') {
-    responsiveVoice.speak(word, "UK English Female");
+    responsiveVoice.speak(word, "UK English Female", { rate: 0.8 });
   } else {
-    // fallback to built-in speechSynthesis if responsiveVoice fails
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.lang = "en-US";
+    utterance.rate = 0.8;
     speechSynthesis.speak(utterance);
   }
 }
 
-// Automatically load a word when the page finishes loading
 window.addEventListener("DOMContentLoaded", getRandomWord);
