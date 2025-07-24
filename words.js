@@ -873,11 +873,11 @@ const words = [
   },
   {
     word: "Microelectrophoresis",
-    definition: "Technique separating molecules with electricity on a micro scale."
+    definition: "Technique separating molecules with electricity on a microscopic scale."
   },
   {
     word: "Microelectrophoreses",
-    definition: "Multiple tests of microelectrophoresis."
+    definition: "Multiple tests separating molecules with electricity on a microscopic scale."
   },
   {
     word: "Microcrystallinities",
@@ -1225,7 +1225,7 @@ const words = [
   },
   {
     word: "Adrenocorticosteroid",
-    definition: "Steroid hormone from adrenal cortex."
+    definition: "Steroid hormone from the adrenal cortex."
   },
   {
     word: "Acetylcholinesterase",
