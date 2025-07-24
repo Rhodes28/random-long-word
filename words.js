@@ -540,7 +540,7 @@ const words = [
     definition: "Assigning human traits to non-human things."
   },
   {
-    word: "Adrenocorticotrophins",
+    word: "Adrenocorticotropins",
     definition: "Hormones that stimulate the adrenal glands."
   },
   {
@@ -1216,11 +1216,11 @@ const words = [
     definition: "Hormones stimulating adrenal cortex activity."
   },
   {
-    word: "Adrenocorticotrophin",
+    word: "Adrenocorticotropin",
     definition: "A hormone that stimulates adrenal glands."
   },
   {
-    word: "Adrenocorticotrophic",
+    word: "Adrenocorticotropic",
     definition: "Stimulating adrenal cortex function."
   },
   {
