@@ -233,7 +233,7 @@ const words = [
   },
   {
     word: "Incomprehensiblenesses",
-    definition: "The quality of being extremely difficult to understand."
+    definition: "Qualities of being extremely difficult to understand."
   },
   {
     word: "Immunohistochemistries",
@@ -1232,3 +1232,4 @@ const words = [
     definition: "An enzyme breaking down the neurotransmitter acetylcholine."
   }
 ]
+
